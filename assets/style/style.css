@@ -1,0 +1,63 @@
+:root {
+    --light-gray: #444444;
+    --dark-gray: #313131;
+    --white: #FFFFFF;
+}
+body {
+    background-image: linear-gradient(to bottom right, var(--light-gray), var(--dark-gray));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    min-width: 330px;   
+    min-height: 480px;
+}
+.display {
+    width: 100%;
+    min-height: 91px ;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.pad {
+    display: flex;
+    justify-content: space-around;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+.numbers button {
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.97px;
+    text-align: center;
+    color: var(--white);
+}
+.actions {
+    background-color: var(--dark-gray);
+}
+.actions button {
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 42.2px;
+    text-align: center;
+    color: var(--white);
+}
+
